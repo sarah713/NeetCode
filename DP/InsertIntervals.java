@@ -12,7 +12,7 @@ public class InsertIntervals {
                 res.add(interval);
             } else {
                 newInterval[0] = Math.min(newInterval[0], interval[0]);
-                newInterval[1] = Math.min(newInterval[1], interval[1]);
+                newInterval[1] = Math.max(newInterval[1], interval[1]);
             }
         }
         res.add(newInterval);
